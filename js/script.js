@@ -24,15 +24,17 @@ const info = document.getElementById('info')
 
 const posters = [data.seasons[1].poster_path, data.seasons[2].poster_path, data.seasons[3].poster_path, data.seasons[4].poster_path, data.seasons[5].poster_path]
 
-
+//https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
 for (let poster of posters) {
     let nieuwposter = document.createElement('img')
     nieuwposter.src = img + poster;
-
-
     info.appendChild(nieuwposter)
+
 }
+
 }
+
+
 
 
 
