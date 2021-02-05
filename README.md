@@ -1,15 +1,6 @@
 # Web App From Scratch @cmda-minor-web 2020 - 2021
 
-Mijn code staat in: 
-Index.html
-Season1.html
-
-css/styles.css
-
-js/s1.js*
-js/script.js*
-
-Wordt nog 1 JS bestand.
+Mijn code is te vinden in het Docs mapje. De JS moet nog 1 bestand worden.
 
 ## Link naar de pagina:
 https://kilroy763.github.io/web-app-from-scratch-2021/
