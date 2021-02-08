@@ -70,11 +70,11 @@ function vote_average(data){
 
 
 
-export function name(data){
+ function name(data){
     let cont = document.getElementById('title')
     cont.innerHTML = data.name
 }   // titel van serie oproepen
 
-export function test(hoi){
+ function test(hoi){
     console.log(hoi)
 }

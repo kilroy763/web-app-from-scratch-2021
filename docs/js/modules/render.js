@@ -1,4 +1,4 @@
-import fetchData from './fetcher.js'
+import {name, overview, poster_path, seasonName, vote_average} from './overview.js'
 
 export function forRender(putData){ //nodige elementen oproepen
     let data = putData;

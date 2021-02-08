@@ -1,4 +1,4 @@
-import fetchData from './fetcher.js'
+const img = "https://image.tmdb.org/t/p/w500" ; //algemene link van de images 
 
 export function poster_path(data){
     const info = document.getElementById('info')
@@ -32,7 +32,8 @@ export function  overview(data){
         cont.innerHTML = data.overview
     } // plot van serie oproepen
     
-    function vote_average(data){
+
+export function vote_average(data){
         let cont = document.getElementById('cijfer')
         cont.innerHTML = data.vote_average
     } // cijfer van serie oproepen
