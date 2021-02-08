@@ -1,7 +1,7 @@
-const img = "https://image.tmdb.org/t/p/w500" ; //algemene link van de images 
-const cors = 'https://api.themoviedb.org/3/tv/1396'; //algemene link van de API
-const key = 'ae3a232f0096c607ad590f0ec850e635'; //key van de API
-const url = `${cors}?api_key=${key}`; //samenvoegen van de link en key
+// const img = "https://image.tmdb.org/t/p/w500" ; //algemene link van de images 
+// const cors = 'https://api.themoviedb.org/3/tv/1396'; //algemene link van de API
+// const key = 'ae3a232f0096c607ad590f0ec850e635'; //key van de API
+// const url = `${cors}?api_key=${key}`; //samenvoegen van de link en key
 
 
 
@@ -11,10 +11,11 @@ routie('test', (date) => {
 });
 
 
-fetch (url) 
-    .then(response => response.json())
-    .then(data => render(data));
-    //oproepen API
+// fetch (url) 
+//     .then(response => response.json())
+//     .then(data => render(data));
+//     //oproepen API
+
 
 function render(putData){ //nodige elementen oproepen
     let data = putData;
@@ -28,7 +29,7 @@ function render(putData){ //nodige elementen oproepen
 }
 
 
-
+ 
 
 function poster_path(data){
 const info = document.getElementById('info')
@@ -69,8 +70,11 @@ function vote_average(data){
 
 
 
-export default function name(data){
+export function name(data){
     let cont = document.getElementById('title')
     cont.innerHTML = data.name
 }   // titel van serie oproepen
 
+export function test(hoi){
+    console.log(hoi)
+}

@@ -1,8 +1,16 @@
-console.log('ja')
-
-import name from './index.js'
+console.log('JS werkt')
 
 
-const names    = document.getElementById('title')
+import {fetchData} from './modules/fetcher.js'
+import {forRender} from './modules/render.js'
+import {poster_path, seasonName,  overview, name} from './modules/overview.js'
 
-console.log(name)
+async function Init(){
+    const data = await fetchData()
+    render(data)
+    forRender(data)
+    poster_path(data)
+    seasonName(data)
+    overview(data)
+    name(data)
+}
