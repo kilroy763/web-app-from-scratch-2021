@@ -4,6 +4,13 @@ const key = 'ae3a232f0096c607ad590f0ec850e635'; //key van de API
 const url = `${cors}?api_key=${key}`; //samenvoegen van de link en key
 
 
+
+
+routie('test', (date) => {
+    console.log("het werkt");
+});
+
+
 fetch (url) 
     .then(response => response.json())
     .then(data => render(data));
@@ -19,6 +26,8 @@ function render(putData){ //nodige elementen oproepen
     console.log("data", data)
     console.log(data.name);
 }
+
+
 
 
 function poster_path(data){
@@ -46,10 +55,6 @@ function seasonName(data){
     //bron:https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
 
 
-function name(data){
-    let cont = document.getElementById('title')
-    cont.innerHTML = data.name
-} // titel van serie oproepen
 
 
 function  overview(data){
@@ -61,3 +66,11 @@ function vote_average(data){
     let cont = document.getElementById('cijfer')
     cont.innerHTML = data.vote_average
 } // cijfer van serie oproepen
+
+
+
+export default function name(data){
+    let cont = document.getElementById('title')
+    cont.innerHTML = data.name
+}   // titel van serie oproepen
+
