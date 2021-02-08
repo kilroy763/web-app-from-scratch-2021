@@ -12,7 +12,7 @@ Ik heb een breaking bad pagina gemaakt. Hierop zijn alle 5 de seizoenen te zien 
 
 ## Welke API met wat voor data  heb ik gebruikt?
 Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot informatie over allemaal films en series. De API bevat veel data, ik gebruik hier niet alles van. De Data elementen die ik gebruik zijn de volgende:
-> test
+- `poster_path`: li
 
 ## Wat wil ik nog doen?
 - [x] API toegevoegd
