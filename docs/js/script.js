@@ -14,7 +14,7 @@ function render(putData){ //nodige elementen oproepen
     name(data);
     overview(data);
     poster_path(data);
-    sNaam(data);
+    seasonName(data);
     vote_average(data);
     console.log("data", data)
     console.log(data.name);
@@ -33,13 +33,13 @@ for (let poster of posters) {
     //poster van de seizoenen oproepen
     //bron:https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
 
-function sNaam(data){
+function seasonName(data){
     const info = document.getElementById('info')
     const naam = [data.seasons[1].name, data.seasons[2].name, data.seasons[3].name, data.seasons[4].name, data.seasons[5].name]
     for (let namen of naam) {
-        let sNaam = document.createElement('p')
-        sNaam.textContent = namen ;
-        info.appendChild(sNaam)
+        let seasonName = document.createElement('p')
+        seasonName.textContent = namen ;
+        info.appendChild(seasonName)
     }
 }
     //namen van de seizoenen oproepen
