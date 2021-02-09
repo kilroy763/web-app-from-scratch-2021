@@ -2,7 +2,6 @@ const cors = 'https://api.themoviedb.org/3/'; //algemene link van de API
 const key = 'ae3a232f0096c607ad590f0ec850e635'; //key van de API
 const brba = "tv/1396"
 const saul = "tv/60059"
-const camino = "movie/559969"
 const url = `${cors}${brba}?api_key=${key}`; //samenvoegen van de link en key
 const url2 = `${cors}${saul}?api_key=${key}`; //samenvoegen van de link en key
 

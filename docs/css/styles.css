@@ -61,28 +61,36 @@ h2{
     text-align: center;
 }
 
-.nav{
+#nav{
     margin: 0 auto;
     text-align: center;
     margin-top: 1em;
 }
 
-a{
+.navlink{
     text-decoration: none;
     font-size: 3em;
     font-weight: 800;
 
 }
-a:nth-child(2):hover{
+.navlink:nth-child(2):hover{
     color: #df030f;
 }
 
-a:nth-child(2){
+.navlink:nth-child(2){
     margin-left: 20%;
 }
 
-a:nth-child(1):hover{
+.navlink:nth-child(1):hover{
     transform: scale(1.2);
     color: #1F6032;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
 }
 

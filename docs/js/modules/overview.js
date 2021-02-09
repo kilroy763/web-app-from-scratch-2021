@@ -5,8 +5,13 @@ export function poster_path(data){
     const posters = [data.seasons[1].poster_path, data.seasons[2].poster_path, data.seasons[3].poster_path, data.seasons[4].poster_path, data.seasons[5].poster_path]
     for (let poster of posters) {
         let nieuwposter = document.createElement('img')
+        let posterlink = document.createElement('a')
+        posterlink.href = '#breakingbadseason1'
         nieuwposter.src = img + poster;
-        info.appendChild(nieuwposter)
+        posterlink.appendChild(nieuwposter)
+        info.appendChild(posterlink)
+
+
     }
     }
         //poster van de seizoenen oproepen
