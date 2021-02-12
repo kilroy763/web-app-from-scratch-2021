@@ -1,5 +1,7 @@
-const img = "https://image.tmdb.org/t/p/w500" ; //algemene link van de images 
+//algemene link van de images 
+const img = "https://image.tmdb.org/t/p/w500" ; 
 
+//poster van de seizoenen oproepen
 export function poster_path2(data2){
     const info = document.getElementById('info2')
     const posters = [data2.seasons[1].poster_path, data2.seasons[2].poster_path, data2.seasons[3].poster_path, data2.seasons[4].poster_path, data2.seasons[5].poster_path]
@@ -9,9 +11,9 @@ export function poster_path2(data2){
         info.appendChild(nieuwposter)
     }
     }
-        //poster van de seizoenen oproepen
-        //bron:https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
-    
+ 
+
+//namen van de seizoenen oproepen
 export function seasonName2(data2){
         const info = document.getElementById('info2')
         const naam = [data2.seasons[1].name, data2.seasons[2].name, data2.seasons[3].name, data2.seasons[4].name, data2.seasons[5].name]
@@ -21,28 +23,25 @@ export function seasonName2(data2){
             info.appendChild(seasonName)
         }
     }
-        //namen van de seizoenen oproepen
-        //bron:https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
+//bron:https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
     
-    
-    
-    
+// plot van serie oproepen
 export function  overview2(data2){
         let cont = document.getElementById('overview2')
         cont.innerHTML = data2.overview
-    } // plot van serie oproepen
+    } 
     
-
+// cijfer van serie oproepen
 export function vote_average2(data2){
         let cont = document.getElementById('cijfer2')
         cont.innerHTML = data2.vote_average
-    } // cijfer van serie oproepen
+    }
     
     
-    
+// titel van serie oproepen
 export  function name2(data2){
         let cont = document.getElementById('title2')
         cont.innerHTML = data2.name
-    }   // titel van serie oproepen
+    } 
     
     

@@ -1,3 +1,4 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Algemene styling*/
 *{
     margin: 0;
     padding: 0;
@@ -5,17 +6,17 @@
     color: white;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Achtergrond styling */
 body{
     background-image: url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(5px);
     height: 100vh;
-
 }
 
 
-
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de posters */
 img{
     width: 15%;
     margin-left: 4%;
@@ -28,7 +29,7 @@ div img:hover{
 }
 
 
-
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de begin tekst */
 .inleiding {
     margin: 0 auto;
    display: block;
@@ -39,9 +40,9 @@ div img:hover{
     height: 12%;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de tekst */
 h1{
     text-align: center;
-
     font-size: 3em;
 }
 
@@ -63,6 +64,8 @@ h2{
     text-align: center;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de navigatie */
+
 #nav{
     margin: 0 auto;
     text-align: center;
@@ -73,8 +76,8 @@ h2{
     text-decoration: none;
     font-size: 2.2em;
     font-weight: 800;
-
 }
+
 .navlink:nth-child(2):hover{
     color: #df030f;
 }
@@ -88,6 +91,7 @@ h2{
     color: #1F6032;
 }
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling voor tonen/verdwijnen andere serie*/
 .hide{
     display: none;
 }

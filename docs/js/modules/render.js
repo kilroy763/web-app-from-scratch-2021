@@ -1,7 +1,9 @@
+// Importeren van de gerenderde data
 import {name, overview, poster_path, seasonName, vote_average} from './overview.js'
 import {name2, overview2, poster_path2, seasonName2, vote_average2} from './saul.js'
 
-export function forRender(putData){ //nodige elementen oproepen
+//nodige elementen oproepen voor breaking bad
+export function forRender(putData){ 
     let data = putData;
     name(data);
     overview(data);
@@ -12,7 +14,8 @@ export function forRender(putData){ //nodige elementen oproepen
     console.log(data.name);
 }
 
-export function forRender2(putData2){ //nodige elementen oproepen
+//nodige elementen oproepen voor better call saul
+export function forRender2(putData2){ 
     let data2 = putData2;
     name2(data2);
     overview2(data2);
