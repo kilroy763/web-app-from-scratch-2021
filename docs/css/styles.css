@@ -22,8 +22,9 @@ img{
     margin-top: 4em;
 }
 
-img:hover{
+div img:hover{
     transform: scale(1.2);
+    transition: all .2s ease
 }
 
 
@@ -41,6 +42,7 @@ img:hover{
 h1{
     text-align: center;
     padding-top: 0.5em;
+    font-size: 3em;
 }
 
 p {
@@ -69,7 +71,7 @@ h2{
 
 .navlink{
     text-decoration: none;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 800;
 
 }
