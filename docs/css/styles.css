@@ -35,9 +35,10 @@ div img:hover{
    display: block;
     width: 40%;
     min-width: 40em;
+
     text-align: center;
     font-size: 1em;
-    height: 12%;
+    height: 7em;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de tekst */
@@ -92,11 +93,12 @@ h2{
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling voor tonen/verdwijnen andere serie*/
-.hide{
-    display: none;
-}
+
 
 .show{
     display: block;
 }
 
+body section {
+    display: none;
+}

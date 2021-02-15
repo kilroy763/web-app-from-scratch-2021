@@ -1,28 +1,45 @@
 // Importeren van de gerenderde data
-import {name, overview, poster_path, seasonName, vote_average} from './overview.js'
-import {name2, overview2, poster_path2, seasonName2, vote_average2} from './saul.js'
+import {nameBrBa, overviewBrBa, poster_pathBrBa, seasonNameBrBa, vote_averageBrBa} from './routes/brba.js'
+import {nameSaul, overviewSaul, poster_pathSaul, seasonNameSaul, vote_averageSaul} from './routes/saul.js'
+import {poster_pathSaul, seasonNameSaul, poster_pathBrBa, seasonNameBrBa} from './routes/index.js'
+
+export function render(dataBrBa, dataSaul){
+     if(dataBrBa) {
+         forRender(dataBrBa)
+     } 
+     if(dataSaul){
+         forRenderSaul(dataSaul)
+     }
+}
+
+
 
 //nodige elementen oproepen voor breaking bad
-export function forRender(putData){ 
-    let data = putData;
-    name(data);
-    overview(data);
-    poster_path(data);
-    seasonName(data);
-    vote_average(data);
-    console.log("data", data)
-    console.log(data.name);
+export function forRender(putDataBrBa){ 
+    let dataBrBa = putDataBrBa;
+    nameBrBa(dataBrBa);
+    overviewBrBa(dataBrBa);
+    poster_pathBrBa(dataBrBa);
+    seasonNameBrBa(dataBrBa);
+    vote_averageBrBa(dataBrBa);
+    console.log("Breaking Bad", dataBrBa)
 }
 
 //nodige elementen oproepen voor better call saul
-export function forRender2(putData2){ 
-    let data2 = putData2;
-    name2(data2);
-    overview2(data2);
-    poster_path2(data2);
-    seasonName2(data2);
-    vote_average2(data2);
-    console.log("data", data2)
-    console.log(data2.name);
+export function forRenderSaul(putDataSaul){ 
+    let dataSaul = putDataSaul;
+    nameSaul(dataSaul);
+    overviewSaul(dataSaul);
+    poster_pathSaul(dataSaul);
+    seasonNameSaul(dataSaul);
+    vote_averageSaul(dataSaul);
+    console.log("Better Call Saul", dataSaul)
+
 }
+
+// export function forRender3(putData3){
+//     let data3 = putData3
+//     console.log("Season 1", data3)
+
+// }
 
