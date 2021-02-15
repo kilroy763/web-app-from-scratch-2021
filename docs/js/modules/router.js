@@ -2,6 +2,7 @@
 export function router() {
     const breakingbad = document.getElementById('breakingbad');
     const bettercallsaul = document.getElementById('bettercallsaul')
+    const seasons = document.getElementById('seasons')
 
     routie({
         '': function () {
@@ -19,21 +20,27 @@ export function router() {
             bettercallsaul.classList.remove('show');
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
-        'breakingbad/season/:id': function (id) {
+        'breakingbad/season/:id': function (id = 1) {
             breakingbad.classList.toggle("show");
+            bettercallsaul.classList.remove('show');
+            seasons.classList.toggle('show');
             console.log(id)
         }
+        
 
     })
 }
 
 
-export function render(data, data2){
-    if(data) {
-        forRender(data)
+export function render(dataBrBa, dataSaul, dataSeasons){
+    if(dataBrBa) {
+        forRender(dataBrBa)
     } 
-    if(data2){
-        forRenderSaul(data2)
+    if(dataSaul){
+        forRenderSaul(dataSaul)
+    }
+    if(dataSeasons){
+        forRenderSaul(dataSeasons)
     }
 }
 

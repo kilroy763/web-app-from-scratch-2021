@@ -26,7 +26,7 @@ export function poster_pathBrBa(dataBrBa){
         })};
 
     
-       
+        
 
     
 // plot van serie oproepen

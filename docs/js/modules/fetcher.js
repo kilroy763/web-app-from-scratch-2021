@@ -25,8 +25,8 @@ export async function fetchData(saul){
 
 
 
-//     export async function fetchDatas1(){
-//         const dataResponse = await fetch(urls1)
-//         const data = dataResponse.json()
-//         return data
-//     };
+    export async function fetchDatas1(){
+        const dataResponse = await fetch(urls1)
+        const data = dataResponse.json()
+        return data
+    };
