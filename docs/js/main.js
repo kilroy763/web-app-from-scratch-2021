@@ -15,7 +15,9 @@ import {
     const dataBrBa = await fetchData(false)
     const dataSaul = await fetchData(true)
     const dataSeasons = await fetchDatas1()
-    console.log(dataBrBa, dataSaul, dataSeasons)
+
+
+    console.log(dataBrBa, dataSaul, dataSeasons )
 
     render(dataBrBa, dataSaul, dataSeasons)
 
