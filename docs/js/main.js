@@ -1,7 +1,7 @@
 // Importeren van de benodige stukken code
 import {
     fetchData,
-    fetchDataSeason
+ 
 } from './modules/fetcher.js'
 import {
     render

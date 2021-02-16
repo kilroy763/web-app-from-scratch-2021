@@ -1,7 +1,8 @@
 // Door middel van Routie verschillende routers maken voor de pagina's
-import {fetchDataSeason} from './fetcher.js'
+import {fetchDataSeason, fetchDataSeasonSaul} from './fetcher.js'
 import {
-    renderSeason
+    renderSeason,
+    renderSeasonSaul
 } from './render.js'
 
 export function router() {
@@ -65,7 +66,7 @@ export function router() {
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
         'breakingbad/season/:id': async function (id) {
-            document.title = "Season " + id;
+            document.title = "Season " + id + ' breaking bad';
   
             breakingbad.classList.toggle("show");
             bettercallsaul.classList.remove('show');
@@ -74,7 +75,19 @@ export function router() {
             renderSeason(dataSeasons)
             console.log(dataSeasons)
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
+        },
+        'bettercallsaul/season/:id': async function (id) {
+            document.title = "Season " + id + ' Better Call Saul';
+  
+            breakingbad.classList.remove("show");
+            bettercallsaul.classList.remove('show');
+            seasons.classList.add('show');
+            const dataSeasonsSaul = await fetchDataSeasonSaul(id)
+            renderSeasonSaul(dataSeasonsSaul)
+            console.log(dataSeasonsSaul)
+            document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         }
+        
     
     })
 }

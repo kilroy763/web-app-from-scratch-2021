@@ -1,29 +1,34 @@
 //algemene link van de images 
 const img = "https://image.tmdb.org/t/p/w500" ; 
 
-//poster van de seizoenen oproepen
+
 export function poster_pathSaul(dataSaul){
     const info = document.getElementById('infoSaul')
-    const posters = [dataSaul.seasons[1].poster_path, dataSaul.seasons[2].poster_path, dataSaul.seasons[3].poster_path, dataSaul.seasons[4].poster_path, dataSaul.seasons[5].poster_path]
-    for (let poster of posters) {
+    dataSaul.seasons.shift()
+    const posters = dataSaul.seasons
+    posters.forEach((poster, i) => {
         let nieuwposter = document.createElement('img')
-        nieuwposter.src = img + poster;
-        info.appendChild(nieuwposter)
-    }
-    }
- 
+        let posterlink = document.createElement('a')
+        posterlink.href = `#BetterCallSaul/season/${poster.season_number}`
+        nieuwposter.src = img + dataSaul.seasons[i].poster_path;
+        posterlink.appendChild(nieuwposter)
+        info.appendChild(posterlink)
+    })};
 
-//namen van de seizoenen oproepen
-export function seasonNameSaul(dataSaul){
+    
+    export function seasonNameSaul(dataSaul){
         const info = document.getElementById('infoSaul')
-        const naam = [dataSaul.seasons[1].name, dataSaul.seasons[2].name, dataSaul.seasons[3].name, dataSaul.seasons[4].name, dataSaul.seasons[5].name]
-        for (let namen of naam) {
+        const naam = dataSaul.seasons
+        naam.forEach((poster, i) => {
             let seasonName = document.createElement('p')
-            seasonName.textContent = namen ;
+            seasonName.textContent = dataSaul.seasons[i].name ;
             info.appendChild(seasonName)
-        }
-    }
-//bron:https://www.youtube.com/watch?v=e0ihEHxd6vI&ab_channel=dcode
+        })};
+
+
+
+
+
     
 // plot van serie oproepen
 export function  overviewSaul(dataSaul){

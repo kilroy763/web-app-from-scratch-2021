@@ -1,7 +1,6 @@
 // Importeren van de gerenderde data
 import {nameBrBa, overviewBrBa, poster_pathBrBa, seasonNameBrBa, vote_averageBrBa} from './routes/brba.js'
 import {nameSaul, overviewSaul, poster_pathSaul, seasonNameSaul, vote_averageSaul} from './routes/saul.js'
-
 import {air_date, nameSeasons, episodes, poster_path, overviewSeasons, episodeName} from './routes/season.js'
 
 export function render(dataBrBa, dataSaul){
@@ -15,6 +14,10 @@ export function render(dataBrBa, dataSaul){
 
 export function renderSeason(dataSeason){
     forRenderSeasons(dataSeason)
+}
+
+export function renderSeasonSaul(dataSeason){
+    forRenderSeasonsSaul(dataSeason)
 }
 
 
@@ -42,6 +45,16 @@ export function forRenderSaul(putDataSaul){
 //nodige elementen oproepen voor breaking bad
 export function forRenderSeasons(putDataSeasons){ 
     let dataSeasons = putDataSeasons;
+    air_date(dataSeasons);
+    nameSeasons(dataSeasons);
+    poster_path(dataSeasons);
+    overviewSeasons(dataSeasons);
+    episodes(dataSeasons);
+    episodeName(dataSeasons);
+}
+
+export function forRenderSeasonsSaul(putDataSeasonsSaul){ 
+    let dataSeasons = putDataSeasonsSaul;
     air_date(dataSeasons);
     nameSeasons(dataSeasons);
     poster_path(dataSeasons);
