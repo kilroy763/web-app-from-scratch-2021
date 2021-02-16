@@ -12,8 +12,16 @@ export  function air_date(dataSeasons){
     airDate.innerHTML = dataSeasons.air_date
 }   
 
+        // plot van serie oproepen
+        export function  overviewSeasons(dataSeasons){
+            let overviewseasons = document.getElementById('overviewseasons')
+            overviewseasons.innerHTML = dataSeasons.overview
+        } 
+
+
 export function episodes(dataSeasons){
         const info = document.getElementById('infoSeasons')
+        info.innerHTML = '';
         const posters = dataSeasons.episodes
         posters.forEach((poster, i) => {
             let nieuwposter = document.createElement('img')
@@ -21,16 +29,13 @@ export function episodes(dataSeasons){
             info.appendChild(nieuwposter)
         })};
     
-        // plot van serie oproepen
-export function  overviewSeasons(dataSeasons){
-    let overviewseasons = document.getElementById('overviewseasons')
-    overviewseasons.innerHTML = dataSeasons.overview
-} 
+
 
 export function poster_path(dataSeasons){
-    var poster = document.createElement("img");
+    let poster = document.createElement("img");
     poster.src = img + dataSeasons.poster_path ; 
-    var src = document.getElementById("seasonsTekst");
+    let src = document.getElementById("seasonImg");
+    src.innerHTML = '';
     src.appendChild(poster);
 }
 

@@ -1,4 +1,8 @@
 // Door middel van Routie verschillende routers maken voor de pagina's
+import {fetchDataSeason} from './fetcher.js'
+import {
+    renderSeason
+} from './render.js'
 
 export function router() {
     const breakingbad = document.getElementById('breakingbad');
@@ -57,13 +61,14 @@ export function router() {
             seasons.classList.remove('show');
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
-        'breakingbad/season/:id': function (id) {
+        'breakingbad/season/:id': async function (id) {
 
             breakingbad.classList.toggle("show");
             bettercallsaul.classList.remove('show');
             seasons.classList.add('show');
-       
-            console.log(id)
+            const dataSeasons = await fetchDataSeason(id)
+            renderSeason(dataSeasons)
+            console.log(dataSeasons)
         }
     
     })

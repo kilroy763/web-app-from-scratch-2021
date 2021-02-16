@@ -4,10 +4,9 @@ const key = 'ae3a232f0096c607ad590f0ec850e635'; //key van de API
 const brba = "tv/1396";  //code voor breaking bad
 const saul = "tv/60059"; //code voor better call saul
 const season = "/season/"; // code voor seizoen 
-const seasonNumber1 = 1; // code voor specifieke seizoen
 const urlBrBa = `${cors}${brba}?api_key=${key}`; //samenvoegen van de link en key
 const urlSaul = `${cors}${saul}?api_key=${key}`; //samenvoegen van de link en key
-const urlSeason = `${cors}${brba}${season}${seasonNumber1}?api_key=${key}`; //samenvoegen van de link en key
+
 
 let dataResponse = {};
 
@@ -27,7 +26,8 @@ export async function fetchData(saul){
 
 
 
-    export async function fetchDatas1(){
+    export async function fetchDataSeason(id){
+        let urlSeason = `${cors}${brba}${season}${id}?api_key=${key}`; //samenvoegen van de link en key
         const dataResponse = await fetch(urlSeason)
         const data = dataResponse.json()
         return data

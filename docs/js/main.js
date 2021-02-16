@@ -1,7 +1,7 @@
 // Importeren van de benodige stukken code
 import {
     fetchData,
-    fetchDatas1
+    fetchDataSeason
 } from './modules/fetcher.js'
 import {
     render
@@ -14,12 +14,12 @@ import {
 (async function Init() {
     const dataBrBa = await fetchData(false)
     const dataSaul = await fetchData(true)
-    const dataSeasons = await fetchDatas1()
 
 
-    console.log(dataBrBa, dataSaul, dataSeasons )
 
-    render(dataBrBa, dataSaul, dataSeasons)
+    console.log(dataBrBa, dataSaul )
+
+    render(dataBrBa, dataSaul)
 
     router()
 
