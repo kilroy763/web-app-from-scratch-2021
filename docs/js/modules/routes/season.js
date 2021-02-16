@@ -27,8 +27,26 @@ export function episodes(dataSeasons){
             let nieuwposter = document.createElement('img')
             nieuwposter.src = img + dataSeasons.episodes[i].still_path;
             info.appendChild(nieuwposter)
+
+            // nieuwposter.onclick = function(){
+            //     nieuwposter.classList.add('enlarge')
+
+            //   }
+            
         })};
     
+      
+    
+        export function episodeName(dataSeasons){
+            const info = document.getElementById('infoSeasons')
+            const naam = dataSeasons.episodes
+            naam.forEach((poster, i) => {
+                let episodeName = document.createElement('p')
+                episodeName.textContent = dataSeasons.episodes[i].name ;
+                info.appendChild(episodeName)
+            })};
+
+            
 
 
 export function poster_path(dataSeasons){
@@ -37,5 +55,5 @@ export function poster_path(dataSeasons){
     let src = document.getElementById("seasonImg");
     src.innerHTML = '';
     src.appendChild(poster);
-}
+};
 

@@ -15,6 +15,7 @@ export function router() {
     routie({
         '': function () {
 
+            document.title = "Breaking Bad / Better Call Saul ";
             bettercallsaul.classList.add('show');
             breakingbad.classList.add('show');
             seasons.classList.remove('show');
@@ -36,6 +37,7 @@ export function router() {
                 bettercallsaultekst.classList.add('show')
             }
 
+            document.title = "Better Call Saul ";
             breakingbad.classList.remove('show');
             bettercallsaul.classList.toggle('show');
             seasons.classList.remove('show');
@@ -55,6 +57,7 @@ export function router() {
                 breakingbadtekst.classList.add('show')
             }
 
+            document.title = "Breaking Bad ";
             // breakingbadnav.classList.add('activeBrBa')
             breakingbad.classList.toggle('show');
             bettercallsaul.classList.remove('show');
@@ -62,13 +65,15 @@ export function router() {
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
         'breakingbad/season/:id': async function (id) {
-
+            document.title = "Season " + id;
+  
             breakingbad.classList.toggle("show");
             bettercallsaul.classList.remove('show');
             seasons.classList.add('show');
             const dataSeasons = await fetchDataSeason(id)
             renderSeason(dataSeasons)
             console.log(dataSeasons)
+            document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         }
     
     })
