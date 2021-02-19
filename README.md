@@ -10,6 +10,20 @@ https://kilroy763.github.io/web-app-from-scratch-2021/
 ![Overview](https://github.com/kilroy763/web-app-from-scratch-2021/blob/master/docs/img/overview.jpg?raw=true)
 
 ## Hoe installeer je het project?
+Clone de repository
+```
+  $ git clone https://github.com/kilroy763/web-app-from-scratch-2021.git
+  ```
+Navigeer naar de repository
+```
+  $ cd web-app-from-scratch-2021
+  $ npm install
+  ```
+
+Run het bestand
+```
+  $ npm run build
+  ```
 
 ## Welke API met wat voor data  heb ik gebruikt?
 Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot informatie over allemaal films en series. De API bevat veel data, ik gebruik hier niet alles van. De Data elementen die ik gebruik zijn de volgende:
@@ -20,7 +34,7 @@ Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot inf
 - `seasons`: Dit is het getal van het seizoen
 - `air_date`: Dit is de datum van wanneer het seizoen te zien was
 - `episodes`: Hier is alle informatie over een aflevering te vinden
-
+  
 ## Actor Diagram
 ![Actor Diagram](https://github.com/kilroy763/web-app-from-scratch-2021/blob/master/docs/img/actor%20diagram2.jpg?raw=true)
 
