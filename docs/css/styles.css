@@ -112,3 +112,40 @@ body section {
 .activeBrBa{
     background-color: #1F6032 ;
 }
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling voor detailpagina */
+
+#seasonsTekst{
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-left: 28vw;
+    position:relative;
+    top: -13.5em
+}
+
+#overviewseasons, #seasonsTitle, #SeasonsAirDate{
+    text-align: left;
+    margin: 0;
+}
+
+
+
+#seasonImg {
+    display: inline-block;
+    width: 200px;
+}
+
+#seasonImg img{
+    display: inline-block;
+    width: 250px;
+    margin-left: 25vw;
+}
+
+#seasons #infoSeasons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+

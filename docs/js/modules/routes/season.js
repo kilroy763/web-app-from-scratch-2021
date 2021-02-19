@@ -19,7 +19,7 @@ export function  overviewSeasons(dataSeasons){
     overviewseasons.innerHTML = dataSeasons.overview
 } 
 
-//Renderen van afsleveringen
+//Renderen van afsleveringen en namen
 export function episodes(dataSeasons){
     const info = document.getElementById('infoSeasons')
     info.innerHTML = '';
@@ -28,17 +28,16 @@ export function episodes(dataSeasons){
         let nieuwposter = document.createElement('img')
         nieuwposter.src = img + dataSeasons.episodes[i].still_path;
         info.appendChild(nieuwposter)
-    })};
-       
-//Renderen van aflevering namen
-export function episodeName(dataSeasons){
-    const info = document.getElementById('infoSeasons')
+    })
+
     const naam = dataSeasons.episodes
     naam.forEach((poster, i) => {
         let episodeName = document.createElement('p')
         episodeName.textContent = dataSeasons.episodes[i].name ;
         info.appendChild(episodeName)
     })};
+       
+
 
 //Renderen van seizoens poster
 export function poster_path(dataSeasons){

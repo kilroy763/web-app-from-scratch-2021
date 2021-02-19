@@ -1,7 +1,7 @@
 // Importeren van de gekozen data
 import {nameBrBa, overviewBrBa, poster_pathBrBa, seasonNameBrBa, vote_averageBrBa} from './routes/brba.js'
 import {nameSaul, overviewSaul, poster_pathSaul, seasonNameSaul, vote_averageSaul} from './routes/saul.js'
-import {air_date, nameSeasons, episodes, poster_path, overviewSeasons, episodeName} from './routes/season.js'
+import {air_date, nameSeasons, episodes, poster_path, overviewSeasons} from './routes/season.js'
 
 export function render(dataBrBa, dataSaul){
      if(dataBrBa) {
@@ -50,7 +50,6 @@ export function forRenderSeasons(putDataSeasons){
     poster_path(dataSeasons);
     overviewSeasons(dataSeasons);
     episodes(dataSeasons);
-    episodeName(dataSeasons);
 }
 
 //nodige elementen oproepen voor better call saul seizoenen
@@ -61,6 +60,5 @@ export function forRenderSeasonsSaul(putDataSeasonsSaul){
     poster_path(dataSeasons);
     overviewSeasons(dataSeasons);
     episodes(dataSeasons);
-    episodeName(dataSeasons);
 }
 
