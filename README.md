@@ -18,6 +18,8 @@ Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot inf
 - `name`: Dit is de naam van de serie
 - `vote_average`: Dit is het gemiddelde cijfer dat de serie krijgt
 - `seasons`: Dit is het getal van het seizoen
+- `air_date`: Dit is de datum van wanneer het seizoen te zien was
+- `episodes`: Hier is alle informatie over een aflevering te vinden
 
 ## Actor Diagram
 ![Actor Diagram](https://github.com/kilroy763/web-app-from-scratch-2021/blob/master/docs/img/actor%20diagram2.jpg?raw=true)
