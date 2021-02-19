@@ -1,11 +1,13 @@
 # Web App From Scratch @cmda-minor-web 2020 - 2021
-![Overview](https://github.com/kilroy763/web-app-from-scratch-2021/blob/master/docs/img/overview.jpg?raw=true)
+Voor het vak Web App From Scratch moet ik een SPA maken zonder frameworks. Data voor de website halen we uit een zelf gekozen API.
+
+## Wat heb ik gemaakt?
+Ik heb een breaking bad pagina gemaakt. Hierop zijn alle 5 de seizoenen te zien in een mooi overzicht, ook zie je waar de serie over gaat en wat voor cijfer hij heeft gehaald. Zodra je op een seizoen klikt zie je alle afleveringen en de namen hiervan, ook zie je een overzicht waar het seizoen over gaat. Hierdoor kan je in een beter overzicht dan elke streamingdienst heeft welke aflevering je wilt zien en of je uberhaupt wilt beginnen aan de serie. Ook wil ik El Camino: A Breaking Bad movie eraan toevoegen en Better Call Saul. 
 
 ## Link naar de pagina:
 https://kilroy763.github.io/web-app-from-scratch-2021/
 
-## Wat heb ik gemaakt?
-Ik heb een breaking bad pagina gemaakt. Hierop zijn alle 5 de seizoenen te zien in een mooi overzicht, ook zie je waar de serie over gaat en wat voor cijfer hij heeft gehaald. Zodra je op een seizoen klikt zie je alle afleveringen en de namen hiervan, ook zie je een overzicht waar het seizoen over gaat. Hierdoor kan je in een beter overzicht dan elke streamingdienst heeft welke aflevering je wilt zien en of je uberhaupt wilt beginnen aan de serie. Ook wil ik El Camino: A Breaking Bad movie eraan toevoegen en Better Call Saul. 
+![Overview](https://github.com/kilroy763/web-app-from-scratch-2021/blob/master/docs/img/overview.jpg?raw=true)
 
 ## Hoe installeer je het project?
 
@@ -16,16 +18,6 @@ Ik heb "The Movie DB" gebruikt voor dit project. Hierdoor heb ik toegang tot inf
 - `name`: Dit is de naam van de serie
 - `vote_average`: Dit is het gemiddelde cijfer dat de serie krijgt
 - `seasons`: Dit is het getal van het seizoen
-
-
-
-## Wat wil ik nog doen?
-- [x] API toegevoegd
-- [x] Mooie overview pagina
-- [ ] Toevoegen van El Camino: A Breaking Bad Movie
-- [ ] Toevoegen van Better Call Saul
-- [ ] Responsive maken
-Komt nog meer
 
 ## Actor Diagram
 ![Actor Diagram](https://github.com/kilroy763/web-app-from-scratch-2021/blob/master/docs/img/actor%20diagram.jpg?raw=true)
