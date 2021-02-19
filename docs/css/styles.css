@@ -115,7 +115,7 @@ body section {
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling voor detailpagina */
 
-#seasonsTekst{
+/* #seasonsTekst{
     display: inline-block;
     text-align: left;
     width: 50%;
@@ -147,5 +147,5 @@ body section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
+} */
 
