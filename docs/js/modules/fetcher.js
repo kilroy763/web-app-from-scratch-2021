@@ -6,25 +6,16 @@ const season = "/season/"; // code voor seizoen
 const urlBrBa = `${cors}${brba}?api_key=${key}`; //samenvoegen van de link en key
 const urlSaul = `${cors}${saul}?api_key=${key}`; //samenvoegen van de link en key
 
-
 let dataResponse = {};
-
-
-
-
 
 // Data fetchen van beide series
 export async function fetchData(saul) {
-
     saul ? dataResponse = await fetch(urlSaul) : dataResponse = await fetch(urlBrBa)
-
     const data = dataResponse.json()
-
     return data
 };
 
-
-
+// Data fetchen van breaking bad seizoenen
 export async function fetchDataSeason(id) {
     let urlSeason = `${cors}${brba}${season}${id}?api_key=${key}`; //samenvoegen van de link en key
     const dataResponse = await fetch(urlSeason)
@@ -32,6 +23,7 @@ export async function fetchDataSeason(id) {
     return data
 };
 
+// Data fetchen van de better call saul seizoenen
 export async function fetchDataSeasonSaul(id) {
     let urlSeasonSaul = `${cors}${saul}${season}${id}?api_key=${key}`; //samenvoegen van de link en key
     const dataResponse = await fetch(urlSeasonSaul)

@@ -1,10 +1,15 @@
-// Door middel van Routie verschillende routers maken voor de pagina's
-import {fetchDataSeason, fetchDataSeasonSaul} from './fetcher.js'
+// Importeren van de benodige stukken code
+import {
+    fetchDataSeason, 
+    fetchDataSeasonSaul
+} from './fetcher.js'
+
 import {
     renderSeason,
     renderSeasonSaul
 } from './render.js'
 
+// Door middel van Routie subpagina´s maken
 export function router() {
     const breakingbad = document.getElementById('breakingbad');
     const bettercallsaul = document.getElementById('bettercallsaul')
@@ -15,7 +20,6 @@ export function router() {
  
     routie({
         '': function () {
-
             document.title = "Breaking Bad / Better Call Saul ";
             bettercallsaul.classList.add('show');
             breakingbad.classList.add('show');
@@ -27,17 +31,14 @@ export function router() {
             document.body.style.backgroundImage = "url(https://external-preview.redd.it/2pS-PL4NrybhxY4Mk_08MjFPiWPbzADajJtiFlJreo4.jpg?auto=webp&s=09c2646c40bd8757770dda3883d39c778ee426a0)";
         },
         'bettercallsaul': function () {
-
             let resultSaul = bettercallsaul.classList.contains("show");
             if (resultSaul) {
                 bettercallsaul.classList.remove('show');
             }
-
             let resultSaulTekst = bettercallsaultekst.classList.contains("hide");
             if (resultSaulTekst) {
                 bettercallsaultekst.classList.add('show')
             }
-
             document.title = "Better Call Saul ";
             breakingbad.classList.remove('show');
             bettercallsaul.classList.toggle('show');
@@ -46,20 +47,15 @@ export function router() {
             document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         },
         'breakingbad': function () {
-
             let resultBrBa = breakingbad.classList.contains("show");
             if (resultBrBa) {
                 breakingbad.classList.remove('show');
-
             }
-
             let resultBrBaTekst = breakingbadtekst.classList.contains("hide");
             if (resultBrBaTekst) {
                 breakingbadtekst.classList.add('show')
             }
-
             document.title = "Breaking Bad ";
-            // breakingbadnav.classList.add('activeBrBa')
             breakingbad.classList.toggle('show');
             bettercallsaul.classList.remove('show');
             seasons.classList.remove('show');
@@ -67,7 +63,6 @@ export function router() {
         },
         'breakingbad/season/:id': async function (id) {
             document.title = "Season " + id + ' breaking bad';
-  
             breakingbad.classList.toggle("show");
             bettercallsaul.classList.remove('show');
             seasons.classList.add('show');
@@ -78,7 +73,6 @@ export function router() {
         },
         'bettercallsaul/season/:id': async function (id) {
             document.title = "Season " + id + ' Better Call Saul';
-  
             breakingbad.classList.remove("show");
             bettercallsaul.classList.remove('show');
             seasons.classList.add('show');

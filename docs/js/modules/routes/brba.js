@@ -1,7 +1,7 @@
  //algemene link van de images 
 const img = "https://image.tmdb.org/t/p/w500" ;
 
-//poster van de seizoenen oproepen
+//Renderen van de seizoen posters
 export function poster_pathBrBa(dataBrBa){
     const info = document.getElementById('infoBrba')
     dataBrBa.seasons.shift()
@@ -15,20 +15,16 @@ export function poster_pathBrBa(dataBrBa){
         info.appendChild(posterlink)
     })};
 
-    
-    export function seasonNameBrBa(dataBrBa){
-        const info = document.getElementById('infoBrba')
-        const naam = dataBrBa.seasons
-        naam.forEach((poster, i) => {
-            let seasonName = document.createElement('p')
-            seasonName.textContent = dataBrBa.seasons[i].name ;
-            info.appendChild(seasonName)
-        })};
+//Renderen van de seizoen namen
+export function seasonNameBrBa(dataBrBa){
+    const info = document.getElementById('infoBrba')
+    const naam = dataBrBa.seasons
+    naam.forEach((poster, i) => {
+        let seasonName = document.createElement('p')
+        seasonName.textContent = dataBrBa.seasons[i].name ;
+        info.appendChild(seasonName)
+    })};
 
-    
-        
-
-    
 // plot van serie oproepen
 export function  overviewBrBa(dataBrBa){
         let cont = document.getElementById('overviewBrba')
