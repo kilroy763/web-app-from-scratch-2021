@@ -1,13 +1,6 @@
 // Importeren van de benodige stukken code
-import {
-    fetchDataSeason,
-    fetchDataSeasonSaul
-} from './fetcher.js'
-
-import {
-    renderSeason,
-    renderSeasonSaul
-} from './render.js'
+import {fetchDataSeason, fetchDataSeasonSaul} from './fetcher.js'
+import {renderSeason, renderSeasonSaul} from './render.js'
 
 // Door middel van Routie subpagina´s maken
 export function router() {
@@ -20,7 +13,6 @@ export function router() {
 
     routie({
         '': function () {
-            document.title = "Breaking Bad / Better Call Saul ";
             bettercallsaul.classList.add('show');
             breakingbad.classList.add('show');
             seasons.classList.remove('show');
@@ -28,6 +20,7 @@ export function router() {
             breakingbadtekst.classList.remove('show')
             bettercallsaultekst.classList.add('hide')
             bettercallsaultekst.classList.remove('show')
+            document.title = "Breaking Bad / Better Call Saul ";
             document.body.style.backgroundImage = "url(https://external-preview.redd.it/2pS-PL4NrybhxY4Mk_08MjFPiWPbzADajJtiFlJreo4.jpg?auto=webp&s=09c2646c40bd8757770dda3883d39c778ee426a0)";
         },
         'bettercallsaul': function () {
@@ -43,7 +36,6 @@ export function router() {
             breakingbad.classList.remove('show');
             bettercallsaul.classList.toggle('show');
             seasons.classList.remove('show');
-
             document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         },
         'breakingbad': function () {
@@ -68,7 +60,6 @@ export function router() {
             seasons.classList.add('show');
             const dataSeasons = await fetchDataSeason(id)
             renderSeason(dataSeasons)
-
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
         'bettercallsaul/season/:id': async function (id) {
@@ -78,10 +69,7 @@ export function router() {
             seasons.classList.add('show');
             const dataSeasonsSaul = await fetchDataSeasonSaul(id)
             renderSeasonSaul(dataSeasonsSaul)
-  
             document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         }
-
-
     })
 }

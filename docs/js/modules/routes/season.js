@@ -40,8 +40,6 @@ export function episodes(dataSeasons) {
     })
 };
 
-
-
 //Renderen van seizoens poster
 export function poster_path(dataSeasons) {
     let poster = document.createElement("img");
