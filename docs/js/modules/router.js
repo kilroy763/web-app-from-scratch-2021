@@ -1,6 +1,6 @@
 // Importeren van de benodige stukken code
 import {
-    fetchDataSeason, 
+    fetchDataSeason,
     fetchDataSeasonSaul
 } from './fetcher.js'
 
@@ -17,7 +17,7 @@ export function router() {
     const bettercallsaultekst = document.getElementById('bettercallsaulTekst')
     const breakingbadnav = document.getElementById('breakingbadNav')
     const seasons = document.getElementById('seasons')
- 
+
     routie({
         '': function () {
             document.title = "Breaking Bad / Better Call Saul ";
@@ -81,7 +81,7 @@ export function router() {
             console.log(dataSeasonsSaul)
             document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         }
-        
-    
+
+
     })
 }

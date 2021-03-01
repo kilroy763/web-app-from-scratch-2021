@@ -15,7 +15,8 @@ import {
 (async function Init() {
     const dataBrBa = await fetchData(false)
     const dataSaul = await fetchData(true)
-    console.log(dataBrBa, dataSaul )
+    console.log(dataBrBa, dataSaul)
     render(dataBrBa, dataSaul)
     router()
 })()
+

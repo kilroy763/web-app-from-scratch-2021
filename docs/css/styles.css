@@ -1,5 +1,5 @@
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Algemene styling*/
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -7,7 +7,7 @@
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Achtergrond styling */
-body{
+body {
     background-image: url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,13 +17,14 @@ body{
 
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de posters */
-img{
+img {
     width: 15%;
     margin-left: 4%;
     margin-top: 4em;
 }
 
-#infoSaul img:hover, #infoBrba img:hover{
+#infoSaul img:hover,
+#infoBrba img:hover {
     transform: scale(1.2);
     transition: all .2s ease
 }
@@ -32,7 +33,7 @@ img{
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de begin tekst */
 .inleiding {
     margin: 0 auto;
-   display: block;
+    display: block;
     width: 40%;
     min-width: 40em;
     text-align: center;
@@ -41,23 +42,23 @@ img{
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de tekst */
-h1{
+h1 {
     text-align: center;
     font-size: 3em;
 }
 
 p {
     margin: 0 auto;
-   display: inline-block;
-   width: 15%;
-   margin-left: 4%;
-   font-weight: 800;
-   margin-bottom: 1em;
-   font-size: 1.5em;
-   text-align: center;
+    display: inline-block;
+    width: 15%;
+    margin-left: 4%;
+    font-weight: 800;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
-h2{
+h2 {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
@@ -65,13 +66,13 @@ h2{
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling van de navigatie */
-#nav{
+#nav {
     margin: 0 auto;
     text-align: center;
     padding-top: 1em;
 }
 
-.navlink{
+.navlink {
     text-decoration: none;
     font-size: 2.0em;
     font-weight: 800;
@@ -80,19 +81,19 @@ h2{
     padding: 0 5% 0 5%;
 }
 
-.navlink:nth-child(2):hover{
+.navlink:nth-child(2):hover {
     color: yellowgreen;
 }
 
-.navlink:nth-child(3):hover{
+.navlink:nth-child(3):hover {
     color: #df030f;
 }
 
-.navlink:hover{
+.navlink:hover {
     transform: scale(1.2);
 }
 
-.navlink:nth-child(1):hover{
+.navlink:nth-child(1):hover {
     color: #1F6032;
 }
 
@@ -101,7 +102,7 @@ h2{
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
 
@@ -109,43 +110,55 @@ body section {
     display: none;
 }
 
-.activeBrBa{
-    background-color: #1F6032 ;
+.activeBrBa {
+    background-color: #1F6032;
 }
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Styling voor detailpagina */
 
-/* #seasonsTekst{
+#seasonsTekst {
     display: inline-block;
     text-align: left;
     width: 50%;
     margin-left: 28vw;
-    position:relative;
-    top: -13.5em
+    position: relative;
+    top: -1em;
 }
 
-#overviewseasons, #seasonsTitle, #SeasonsAirDate{
+#overviewseasons,
+#seasonsTitle,
+#SeasonsAirDate {
     text-align: left;
     margin: 0;
 }
 
 
 
+
+
 #seasonImg {
     display: inline-block;
-    width: 200px;
+    width: 225px;
 }
 
-#seasonImg img{
+#seasonImg img {
     display: inline-block;
     width: 250px;
     margin-left: 25vw;
 }
 
-#seasons #infoSeasons{
+#infoSeasons p {
+    display: none;
+}
+
+#seasons #infoSeasons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-} */
+}
 
+#infoSeasons img {
+    margin-left: 3em;
+    margin-top: 1em;
+}

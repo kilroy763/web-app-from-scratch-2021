@@ -8,6 +8,7 @@ const urlSaul = `${cors}${saul}?api_key=${key}`; //samenvoegen van de link en ke
 
 let dataResponse = {};
 
+
 // Data fetchen van beide series
 export async function fetchData(saul) {
     saul ? dataResponse = await fetch(urlSaul) : dataResponse = await fetch(urlBrBa)
@@ -30,3 +31,4 @@ export async function fetchDataSeasonSaul(id) {
     const data = dataResponse.json()
     return data
 };
+
