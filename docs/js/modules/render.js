@@ -73,7 +73,7 @@ export function forRenderSeasons(putDataSeasons) {
     overviewSeasons(dataSeasons);
     episodes(dataSeasons);
 
-    console.log(dataSeasons)
+
         
 }
 

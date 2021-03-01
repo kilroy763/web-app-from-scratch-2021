@@ -32,7 +32,7 @@ export function episodes(dataSeasons) {
     )
     episodes.forEach((episode) => {
         let nieuwposter = document.createElement('img')
-        let episodeName = document.createElement('p')
+        let episodeName = document.createElement('h2')
         nieuwposter.src = img + episode.poster
         episodeName.textContent = episode.name;
         info.appendChild(nieuwposter)

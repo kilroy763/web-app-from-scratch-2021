@@ -68,7 +68,7 @@ export function router() {
             seasons.classList.add('show');
             const dataSeasons = await fetchDataSeason(id)
             renderSeason(dataSeasons)
-            console.log(dataSeasons)
+
             document.body.style.backgroundImage = "url(https://images6.alphacoders.com/321/thumb-1920-321927.jpg)";
         },
         'bettercallsaul/season/:id': async function (id) {
@@ -78,7 +78,7 @@ export function router() {
             seasons.classList.add('show');
             const dataSeasonsSaul = await fetchDataSeasonSaul(id)
             renderSeasonSaul(dataSeasonsSaul)
-            console.log(dataSeasonsSaul)
+  
             document.body.style.backgroundImage = "url(https://wallpapercave.com/wp/wp1930554.jpg)";
         }
 
