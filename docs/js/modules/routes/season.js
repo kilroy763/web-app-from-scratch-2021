@@ -47,4 +47,5 @@ export function poster_path(dataSeasons) {
     let src = document.getElementById("seasonImg");
     src.innerHTML = '';
     src.appendChild(poster);
+
 };
